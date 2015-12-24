@@ -1,0 +1,47 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Open Sans', sans-serif;
+	color: $black;
+	line-height: 1.5;
+}
+
+h1{
+	font-size: 2.125em;
+	margin-bottom: .5em;	
+}
+
+h2{
+	font-size: 1.75em;
+	margin-bottom: .25em;
+}
+
+h3{
+	font-size: 1.250em;
+	margin-bottom: .25em;
+}
+
+p{
+	color: $gray;
+	line-height: 1.875;
+	margin-bottom: 1em;
+
+	a{
+		font-weight: 700;
+		border-bottom: 1px solid $main-color;
+		color: $black;
+	}
+}
+
+
+strong{
+	font-weight: 700;
+	color: $black;
+}
+
+a{
+	text-decoration: none;
+}

@@ -1,0 +1,34 @@
+/* =========================================================================
+   Border-Box
+   ========================================================================= */
+
+*, *::after, *::before {
+   	-webkit-box-sizing: border-box;
+   	-moz-box-sizing: border-box;
+   	box-sizing: border-box;
+   	-webkit-font-smoothing: antialiased;
+   	font-smoothing: antialiased;
+   	text-rendering: optimizeLegibility;
+}
+
+/* =========================================================================
+   Clearfix for floats elements
+   ========================================================================= */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+.relative{
+	position: relative;
+}

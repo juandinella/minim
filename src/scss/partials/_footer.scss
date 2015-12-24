@@ -1,0 +1,19 @@
+.mainFooter{
+	text-align: center;
+	padding: 60px 0;
+	border-top: 1px solid rgba($gray, .5);
+
+	p{
+		color: $black;
+		margin-bottom: 0;
+	}
+}
+
+.minim-footer{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $main-color;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.500em;
+	overflow: hidden;
+}

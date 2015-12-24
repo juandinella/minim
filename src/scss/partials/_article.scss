@@ -1,0 +1,200 @@
+.article{
+	margin-top: 50px;
+
+	.container{
+		max-width: 720px;
+	}
+
+	h1{
+		margin-bottom: .15em;
+	}
+
+	ul,
+	ol{
+		margin: 2em 0 2em 2em;
+	}
+
+	ul{
+		list-style: disc;
+	}
+	ol{
+		list-style: decimal;
+	}
+	li{
+		color:$gray;
+		line-height: 1.875;
+		font-size: 1em;
+		margin-bottom: 1em;
+	}
+
+	.article-meta{
+		margin: 0 0 1em 0;
+
+		li{
+			display: inline-block;
+			font-size: 12px;
+			color: $main-color;
+
+			&:first-of-type{
+				&:after{
+					content: ' · ';
+				}
+			}
+		}
+	}
+}
+
+figure{
+	margin: 20px 0;
+}
+
+figcaption{
+	font-family: "Merriweather", serif;
+	color: $black;
+	font-size: 12px;
+	margin: 5px;
+	line-height: 1.75;
+}
+
+figcaption{
+	position: absolute;
+  top: 0;
+  left: -175px;
+  width: 150px;
+  border-right: 1px solid $gray;
+  text-align: right;
+  padding: 5px 10px 10px 0;
+
+  p{
+   font-size: 14px;
+   line-height: 1.5;
+   margin-bottom: .5em;
+
+   &:last-of-type{
+    margin-bottom: 0;
+  }
+
+  strong{
+   font-family: 'Open Sans', sans-serif;
+ }
+}
+}
+
+code{
+	padding: 2px 6px;
+	margin: 0 5px;
+	background: #f3f3f3;
+	border: 1px solid #e6e6e6;
+	border-radius: 4px 4px;
+}
+
+
+blockquote{
+	border-left: 1px solid #DF3411;
+	font-style:italic;
+	margin-bottom: 2em;
+	font-size: 1.375em;
+	padding-left: 32px;
+	color: $black;
+	line-height: 1.75em;
+}
+
+.article-end{
+	max-width: 312px;
+	width: 100%;
+	border: 0;
+	background-color: rgba($gray, .5);
+	height: 1px;
+	margin: 40px auto;
+}
+
+.share{
+	margin-bottom: 40px;
+	margin-top: 50px;
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li{
+			display: inline-block;
+			margin-right: 20px;
+
+			&:last-of-type{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.fa-twitter{
+	color: #00ACED;
+}
+
+.fa-facebook{
+	color: #3B5998;
+}
+
+.author{
+	padding: 60px 0;
+	border-top: 1px solid rgba($gray, .5);
+}
+.author-img{
+	float: left;
+
+	img{
+		display: block;
+	}
+}
+
+.author-content{
+	margin-left: 120px;
+
+	p{
+		font-size: 0.875em;
+		max-width: 420px;
+	}
+}
+
+/* =========================================================================
+   Responsive
+   ========================================================================= */
+
+   @media screen and (max-width: 1024px){
+     figcaption{
+      position: static;
+      border-right: 0 none;
+      border-bottom: 1px solid rgba($gray, .5);
+      width: 100%;
+
+      p{
+       margin-bottom: .25;
+     }
+   }
+
+   .article{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 680px){
+	.article{
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 380px){
+
+	.article{
+		margin-top: 0;
+
+		h1{
+			margin-bottom: .25em;
+		}
+
+		.article-meta{
+			margin: 0 0 .25em 0;
+		}
+	}
+}

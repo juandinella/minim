@@ -1,0 +1,32 @@
+html,body{
+	height: 100%;
+	min-height:100%;
+}
+
+body{
+	font-family: "Merriweather", serif;
+	font-size: 16px;
+	margin: 0;
+	height: 100%;
+	min-height: 100%;
+	padding-top: 80px;
+}
+
+.container{
+	position: relative;
+	max-width: 940px;
+	width: 100%;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+
+hr{
+	height: 1px;
+	border: 0 none;
+	background-color: rgba($gray, .5);
+}
+
+
+img{
+	max-width: 100%;
+}
