@@ -1,8 +1,8 @@
 .article{
-	margin-top: 50px;
 
 	.container{
 		max-width: 720px;
+    margin-top: 50px;
 	}
 
 	h1{
@@ -42,6 +42,14 @@
 			}
 		}
 	}
+}
+
+.hero{
+  background-size: cover;
+  height: 500px;
+  display: block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 figure{
@@ -129,7 +137,7 @@ blockquote{
 }
 
 .fa-twitter{
-	color: #00ACED;
+	color: #55acee;
 }
 
 .fa-facebook{
@@ -161,7 +169,7 @@ blockquote{
    Responsive
    ========================================================================= */
 
-   @media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px){
      figcaption{
       position: static;
       border-right: 0 none;
@@ -174,20 +182,32 @@ blockquote{
    }
 
    .article{
-    margin-top: 20px;
+      .container{
+        margin-top: 20px;
+      }
+  }
+}
+
+@media screen and (max-width: 990px){
+  .hero{
+    height: 350px;
   }
 }
 
 @media screen and (max-width: 680px){
 	.article{
-		margin-top: 15px;
+		.container{
+      margin-top: 15px;
+    }
 	}
 }
 
 @media screen and (max-width: 380px){
 
 	.article{
-		margin-top: 0;
+		.container{
+      margin-top: 0;
+    }
 
 		h1{
 			margin-bottom: .25em;

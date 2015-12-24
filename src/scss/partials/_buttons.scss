@@ -24,7 +24,7 @@
 	}
 
 	&:before{
-		content: 'share';
+		content: 'share on';
 	}
 
 	i{
@@ -36,13 +36,14 @@
 
 .btn-share{
 	background: #FFF;
-	border:1px solid $gray;
+	border:1px solid rgba($gray, 0.5);
 	color: $gray;
 	height: 44px;
 	min-width: 142px;
 	line-height: 44px;
 	font-size: 1em;
 	overflow: hidden;
+	font-weight: 400;
 	backface-visibility: hidden;
 
 	span{
@@ -78,7 +79,7 @@
 
 .btn-share_twitter{
 	&:before{
-		background-color: #00ACED;
+		background-color: #55acee;
 	}
 }
 

@@ -52,7 +52,7 @@ body {
   margin: 0;
   height: 100%;
   min-height: 100%;
-  padding-top: 80px; }
+  padding-top: 70px; }
 
 .container {
   position: relative;
@@ -107,18 +107,18 @@ strong {
 a {
   text-decoration: none; }
 
-/* ==========================================================================
+/* =========================================================================
    Border-Box
-   ========================================================================== */
+   ========================================================================= */
 *, *::after, *::before {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
-/* ==========================================================================
+/* =========================================================================
    Clearfix for floats elements
-   ========================================================================== */
+   ========================================================================= */
 .cf:before,
 .cf:after {
   content: " ";
@@ -237,20 +237,21 @@ a {
     z-index: -1;
     transition: all 0.3s; }
   .btn:before {
-    content: 'share'; }
+    content: 'share on'; }
   .btn i {
     margin-right: 15px;
     font-size: 1.250em; }
 
 .btn-share {
   background: #FFF;
-  border: 1px solid #949494;
+  border: 1px solid rgba(148, 148, 148, 0.5);
   color: #949494;
   height: 44px;
   min-width: 142px;
   line-height: 44px;
   font-size: 1em;
   overflow: hidden;
+  font-weight: 400;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
   .btn-share span {
@@ -277,7 +278,7 @@ a {
     top: 0; }
 
 .btn-share_twitter:before {
-  background-color: #00ACED; }
+  background-color: #55acee; }
 
 .btn-share_facebook:before {
   background-color: #3B5998; }
@@ -322,7 +323,7 @@ a {
 .menu {
   position: relative;
   float: right;
-  height: 37px;
+  height: 30px;
   padding: 10px;
   cursor: pointer;
   background: none;
@@ -446,9 +447,9 @@ a {
     -webkit-transform: translateY(5px);
     transform: translateY(5px); }
 
-/* ==========================================================================
+/* =========================================================================
    Responsive
-   ========================================================================== */
+   ========================================================================= */
 @media screen and (max-width: 680px) {
   .posts {
     margin-top: 15px; }
@@ -477,32 +478,44 @@ a {
   .post {
     margin-bottom: 40px; } }
 
-.article {
+.article .container {
+  max-width: 720px;
   margin-top: 50px; }
-  .article .container {
-    max-width: 720px; }
-  .article h1 {
-    margin-bottom: .15em; }
-  .article ul,
-  .article ol {
-    margin: 2em 0 2em 2em; }
-  .article ul {
-    list-style: disc; }
-  .article ol {
-    list-style: decimal; }
-  .article li {
-    color: #949494;
-    line-height: 1.875;
-    font-size: 1em;
-    margin-bottom: 1em; }
-  .article .article-meta {
-    margin: 0 0 1em 0; }
-    .article .article-meta li {
-      display: inline-block;
-      font-size: 12px;
-      color: #DF3411; }
-      .article .article-meta li:first-of-type:after {
-        content: ' · '; }
+
+.article h1 {
+  margin-bottom: .15em; }
+
+.article ul,
+.article ol {
+  margin: 2em 0 2em 2em; }
+
+.article ul {
+  list-style: disc; }
+
+.article ol {
+  list-style: decimal; }
+
+.article li {
+  color: #949494;
+  line-height: 1.875;
+  font-size: 1em;
+  margin-bottom: 1em; }
+
+.article .article-meta {
+  margin: 0 0 1em 0; }
+  .article .article-meta li {
+    display: inline-block;
+    font-size: 12px;
+    color: #DF3411; }
+    .article .article-meta li:first-of-type:after {
+      content: ' · '; }
+
+.hero {
+  background-size: cover;
+  height: 500px;
+  display: block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
 
 figure {
   margin: 20px 0; }
@@ -569,7 +582,7 @@ blockquote {
         margin-right: 0; }
 
 .fa-twitter {
-  color: #00ACED; }
+  color: #55acee; }
 
 .fa-facebook {
   color: #3B5998; }
@@ -589,9 +602,9 @@ blockquote {
     font-size: 0.875em;
     max-width: 420px; }
 
-/* ==========================================================================
+/* =========================================================================
    Responsive
-   ========================================================================== */
+   ========================================================================= */
 @media screen and (max-width: 1024px) {
   figcaption {
     position: static;
@@ -600,17 +613,21 @@ blockquote {
     width: 100%; }
     figcaption p {
       margin-bottom: .25; }
-  .article {
+  .article .container {
     margin-top: 20px; } }
 
+@media screen and (max-width: 990px) {
+  .hero {
+    height: 350px; } }
+
 @media screen and (max-width: 680px) {
-  .article {
+  .article .container {
     margin-top: 15px; } }
 
 @media screen and (max-width: 380px) {
-  .article {
+  .article .container {
     margin-top: 0; }
-    .article h1 {
-      margin-bottom: .25em; }
-    .article .article-meta {
-      margin: 0 0 0.25em 0; } }
+  .article h1 {
+    margin-bottom: .25em; }
+  .article .article-meta {
+    margin: 0 0 0.25em 0; } }
